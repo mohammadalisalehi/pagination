@@ -7,17 +7,18 @@ body{background-image:url(Capture2.PNG);text-align:center}
 .pagination a:active,.pagination .current:active{color:#fff}
 .pagination .current:after{width:100%;bottom:0}
 .pagination .prev:after,.pagination .next:after{display:none}
-.pagination a:after,.pagination span:after{content:"";position:absolute;width:100%;height:10%;background-color:#f26a00;bottom:-10%;z-index:1;right:0;left:0}
+.pagination a:after,.pagination span:after{content:"";position:absolute;width:100%;height:10%;background-color:#130e0b;bottom:-10%;z-index:1;right:0;left:0}
 .pagination a:hover:after,.pagination span.current:hover:after,.pagination a:focus:after,.pagination span.current:focus:after{width:100%;bottom:0}
 .pagination a:before,.pagination span:before{content:"";position:absolute;width:1px;height:100%;bottom:0;z-index:1;right:0;left:0;background:linear-gradient(rgba(151,129,94,0),rgba(151,129,94,0.7),rgba(151,129,94,0.7),rgba(151,129,94,0.7),rgba(151,129,94,0.7),rgba(151,129,94,0))}
 .pagination .next:before{content:"»";position:absolute;width:100%;height:2.1em;z-index:1;right:0;left:0;top:.21em;background:#1f1611}
 .pagination .prev:before{content:"«";position:absolute;width:100%;height:2.1em;z-index:1;right:0;left:0;top:.21em;background:#1f1611}
 .pagination .prev,.pagination .next{background:#1f1611}
 .pagination .prev:hover,.pagination .next:hover,.pagination .prev:hover:before,.pagination .next:hover:before,.pagination .prev:focus,.pagination .next:focus,.pagination .prev:focus:before,.pagination .next:focus:before{color:#eee}
-.pagination .prev,.pagination .prev:before,.pagination .prev:hover,.pagination .next:hover,.pagination span:before,.pagination span.current:hover:after,.pagination span:after,.pagination a:before,.pagination a:after,.pagination a:hover:after,.pagination .current:after{transition:.3s}
+.pagination .prev,.pagination .prev:before,.pagination .prev,.pagination .next,.pagination span:before,.pagination span.current:after,.pagination span:after,.pagination a:before,.pagination a:after,.pagination a:after,.pagination .current:after{transition: all .2s, color .2s}
 .next{background-color:#17100d}
 .pagination .prev + a:before,.pagination .prev + .current:before{display:none}
 .pagination .prev + a,.pagination .prev + .current{border-left:2px solid #130e0b;}
 .pagination .last{border-right:2px solid #130e0b;}
-.pagination .prev:after,.pagination .next:after{transition:.1s}
+.pagination .prev:after,.pagination .next:after{/*transition:.1s*/}
 .pagination .prev:active:before,.pagination .next:active:before,.pagination .prev:active,.pagination .next:active{color:#fff;background-color:#0c0907}
+ /*.pagination a{transition: color 0s;}*/
