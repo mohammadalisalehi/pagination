@@ -1,177 +1,34 @@
-
-body{
-	background: url("pattern.png");
-	text-align: center;
-	font-size: 1.2em;
-}
-
-.pagination{
-	margin: 20% auto;
-	display: inline-block;
-	font-size: 2em;
-	position: relative;
-}
-
-.pagination span{
-	cursor: default;
-}
-
-.pagination .current{
-	cursor: pointer;
-}
-
-.pagination a ,.pagination span{
-	padding: .5em .5em;
-	background-color:rgba(29, 21, 19, 0.87);
-	float: left;
-	color: rgba(220, 217, 96, 0.81);
-	position: relative;
-	margin-left: 1em;
-	min-width: 1.7em;
-	transition:.3s;
-}
-
-.pagination a:hover{
-	background-color:rgba(16, 12, 11, 0.87);
-	transition:.3s;
-	color: #f1ec24;
-}
-
-.pagination a:after ,.pagination span:after{
-	content: "";
-	top: 0;
-	left: 100%;
-	position: absolute;
-    border-style: solid;
-	border-width: 1.33333333em 0 1.33333333em .9em;
-	border-color: transparent transparent transparent rgba(29, 21, 19, 0.87);
-	transition:.3s;
-}
-
-.pagination a:hover:after {
-	border-color: transparent transparent transparent rgba(16, 12, 11, 0.87);
-	/*transition:.3s;*/
-}
-
-.pagination a:hover:before{
-	border-color: rgba(16, 12, 11, 0.87) transparent ;
-	/*transition:.3s;*/
-}
-
-.pagination a:before , .pagination span:before{
-	content: "";
-	top: 0;
-	right: 100%;
-	position: absolute;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 1.33333333em 0 1.33333333em  .9em;
-	border-color: rgba(29, 21, 19, 0.87) transparent ;
-	transition:.3s;
-}
-
-.pagination a:nth-child(2){
-	margin-left: 4.2em;
-}
-
-.pagination a:nth-child(2):before{
-	content: "";
-	top: 0;
-	right: 100%;
-	position: absolute;
-    border-style: solid;
-	border-width: 1.33333333em .9em 1.33333333em 0;
-	border-color: transparent rgba(29, 21, 19, 0.87) transparent transparent ;
-}
-
-.pagination a:nth-child(2):hover:before {
-	border-color: transparent rgba(16, 12, 11, 0.87) transparent transparent ;
-}
-
-.pagination .current {
-	background-color:rgba(16, 12, 11, 0.87);
-	transition:.3s;
-	color: #f1ec24;
-}
-
-.pagination .current:after{
-	border-color: transparent transparent transparent rgba(16, 12, 11, 0.87);
-}
-
-.pagination .current:before{
-	border-color: rgba(16, 12, 11, 0.87) transparent ;
-
-}
-
-.pagination a:last-child{
-	padding: 0;
-	margin-left: 1.5em;
-}
-
-.pagination a:last-child:after{
-	left: 0;
-}
-
-.pagination a:first-child{
-	padding: 0;
-}
-
-.pagination a:first-child:before{
-    border-width: 1.33333333em .9em 1.33333333em 0;
-    border-color: transparent rgba(29, 21, 19, 0.87) transparent transparent;
-    right: 0;
-}
-
-.pagination a:first-child:after{
-	border-width: 1.33333333em .9em 1.33333333em 0;
-	border-color: rgba(29, 21, 19, 0.87) transparent ;
-}
-
-.pagination a:first-child:hover:before {
-    border-color: transparent rgba(16, 12, 11, 0.87) transparent transparent;
-}
-
-.pagination a:first-child:hover:after {
-	border-color: rgba(16, 12, 11, 0.87) transparent ;
-}
-
-.pagination a:active{
-	background-color: rgba(10, 6, 5, 1);
-}
-
-.pagination a:active:after {
-	border-color: transparent transparent transparent rgba(10, 6, 5, 1);
-	transition:.3s;
-}
-
-.pagination a:active:before{
-	border-color: rgba(10, 6, 5, 1) transparent ;
-	transition:.3s;
-}
-
-.pagination a:nth-child(2):active:before {
-	border-color: transparent rgba(10, 6, 5, 1) transparent transparent ;
-}
-
-.pagination a:first-child:active:before {
-    border-color: transparent rgba(43, 9, 0, 0.87)  transparent transparent;
-}
-
-.pagination a:first-child:active:after {
-    border-color: rgba(43, 9, 0, 0.87)  transparent;
-}
-
-.pagination a:last-child:active:before {
-    border-color: rgba(43, 9, 0, 0.87)  transparent;
-}
-.pagination a:last-child:active:after {
-	border-color: transparent transparent transparent rgba(43, 9, 0, 0.87);
-}
-
-.pagination a:first-child:active:before,
-.pagination a:first-child:active:after,
-.pagination a:last-child:active:before,
-.pagination a:last-child:active:after{
-	transition:.1s;
-}
+body{background:url(pattern.png);text-align:center;font-size:.9em}
+.pagination{margin:2em auto;display:inline-block;font-size:2em;position:relative}
+.pagination span,.pagination .current{cursor:default}
+.pagination a,.pagination span{padding:.5em;background-color:rgba(29,21,19,0.87);float:left;color:rgba(220,217,96,0.81);position:relative;margin-left:1em;min-width:1.7em}
+.pagination a:hover,.pagination a:focus{background-color:rgba(16,12,11,0.87);color:#f1ec24}
+.pagination a:after,.pagination span:after{content:"";top:0;left:100%;position:absolute;border-style:solid;border-width:1.333em 0 1.333em .9em;border-color:transparent transparent transparent rgba(29,21,19,0.87)}
+.pagination a:hover:after,.pagination a:focus:after{border-color:transparent transparent transparent rgba(16,12,11,0.87)}
+.pagination a:hover:before,.pagination a:focus:before{border-color:rgba(16,12,11,0.87) transparent}
+.pagination a:before,.pagination span:before{content:"";top:0;right:100%;position:absolute;width:0;height:0;border-style:solid;border-width:1.333em 0 1.333em .9em;border-color:rgba(29,21,19,0.87) transparent}
+.pagination .prev + a,.pagination .prev + span{margin-left:4.2em}
+.pagination .prev + a:before,.pagination .prev + span:before{content:"";top:0;right:100%;position:absolute;border-style:solid;border-width:1.333em .9em 1.333em 0;border-color:transparent rgba(29,21,19,0.87) transparent transparent}
+.pagination .prev + a:hover:before,.pagination .prev + a:focus:before,.pagination .prev + span:hover:before,.pagination .prev + span:focus:before{border-color:transparent #130e0c transparent transparent}
+.pagination .prev + a:hover:before,.pagination .prev + a:focus:before,.pagination .prev + span:hover:before
+.pagination .prev + span:focus:before{border-color:transparent rgba(16,12,11,0.87) transparent transparent}
+.pagination .next{padding:0;margin-left:1.5em}
+.pagination .next:after{left:0}
+.pagination .prev{padding:0}
+.pagination .prev:before{border-width:1.333em .9em 1.333em 0;border-color:transparent rgba(29,21,19,0.87) transparent transparent;right:0}
+.pagination .prev:after{border-width:1.333em .9em 1.333em 0;border-color:rgba(29,21,19,0.87) transparent}
+.pagination .prev:hover:before,.pagination .prev:focus:before{border-color:transparent rgba(16,12,11,0.87) transparent transparent}
+.pagination .prev:hover:after,.pagination .prev:focus:after{border-color:rgba(16,12,11,0.87) transparent}
+.pagination a:active{background-color:rgba(10,6,5,1)}
+.pagination a:active:after{border-color:transparent transparent transparent rgba(10,6,5,1)}
+.pagination a:active:before{border-color:rgba(10,6,5,1) transparent}
+.pagination .prev + a:active:before,.pagination .prev + span:active:before{border-color:transparent rgba(10,6,5,1) transparent transparent}
+.pagination .prev:active:before{border-color:transparent #080606 transparent transparent}
+.pagination .prev:active:after{border-color:#080606 transparent}
+.pagination .next:active:before{border-color:#080606 transparent}
+.pagination .next:active:after{border-color:transparent transparent transparent #080606}
+.pagination .prev + .current:before{border-color:transparent rgba(16,12,11,0.87) transparent transparent}
+.pagination .current:before{border-color:rgba(16,12,11,0.87) transparent}
+.pagination .current{background-color:rgba(16,12,11,0.87);color:#f1ec24}
+.pagination .current:after{border-color:transparent transparent transparent rgba(16,12,11,0.87)}
+.pagination .current,.pagination a:active:before,.pagination a:active:after,.pagination a,.pagination span,.pagination a:hover,.pagination a:focus,.pagination a:after,.pagination span:after,.pagination a:before,.pagination span:before{transition:.3s}
