@@ -1,5 +1,5 @@
 body{background-image:url(Capture2.PNG);text-align:center}
-.pagination{margin:10% auto;overflow:hidden;text-align:center;display:block;display:inline-block;border-radius:50px;box-shadow: 0 0 0 2px #130e0b,0 0 0 3px #402d22;font-size:2em}
+.pagination{margin:10% auto;overflow:hidden;text-align:center;display:block;display:inline-block;border-radius:50px;box-shadow:0 0 0 2px #130e0b,0 0 0 3px #402d22;font-size:2em}
 .pagination span,.pagination .current{cursor:default}
 .pagination a,.pagination span{padding:.2em .8em;background-color:#2b1e16;color:#79613a;position:relative;float:left;min-width:2.2em}
 .pagination .current{background-color:#2b1e16}
@@ -14,11 +14,10 @@ body{background-image:url(Capture2.PNG);text-align:center}
 .pagination .prev:before{content:"«";position:absolute;width:100%;height:2.1em;z-index:1;right:0;left:0;top:.21em;background:#1f1611}
 .pagination .prev,.pagination .next{background:#1f1611}
 .pagination .prev:hover,.pagination .next:hover,.pagination .prev:hover:before,.pagination .next:hover:before,.pagination .prev:focus,.pagination .next:focus,.pagination .prev:focus:before,.pagination .next:focus:before{color:#eee}
-.pagination .prev,.pagination .prev:before,.pagination .prev,.pagination .next,.pagination span:before,.pagination span.current:after,.pagination span:after,.pagination a:before,.pagination a:after,.pagination a:after,.pagination .current:after{transition: all .2s, color .2s}
 .next{background-color:#17100d}
 .pagination .prev + a:before,.pagination .prev + .current:before{display:none}
-.pagination .prev + a,.pagination .prev + .current{border-left:2px solid #130e0b;}
-.pagination .last{border-right:2px solid #130e0b;}
-.pagination .prev:after,.pagination .next:after{/*transition:.1s*/}
+.pagination .prev + a,.pagination .prev + .current{border-left:2px solid #130e0b}
+.pagination .last{border-right:2px solid #130e0b}
 .pagination .prev:active:before,.pagination .next:active:before,.pagination .prev:active,.pagination .next:active{color:#fff;background-color:#0c0907}
- /*.pagination a{transition: color 0s;}*/
+.pagination span:before,.pagination span:after,.pagination span.current:after,.pagination a:before,.pagination a:after,.pagination .current:after{transition:all .3s}
+.pagination .prev,.pagination .prev:before,.pagination .next,.pagination .next:before{transition:all .1s}
